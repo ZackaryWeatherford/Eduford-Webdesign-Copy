@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: arial;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .landing-container {
@@ -15,7 +17,7 @@
 .landing-img {
   width: 100vw;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   z-index: -1;
 }
 
@@ -83,6 +85,71 @@ ul li {
 .title-description > a:hover {
   background-color: rgb(255, 61, 58);
   border-color: rgb(255, 61, 58);
+}
+
+.courses-container {
+  padding-top: 5rem;
+  padding-bottom: 14rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.h2-description {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #686868;
+  margin-top: 1rem;
+}
+
+.courses-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.article-card {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  background-color: rgba(255, 248, 235, 0.8588235294);
+  padding: 2rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.article-card > h3 {
+  margin-bottom: 2rem;
+}
+
+.article-card > p {
+  color: #3f3f3f;
+}
+
+.location-card, .location-card-washington, .location-card-newyork, .location-card-london {
+  height: 40rem;
+  width: 25rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  border-radius: 10px;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.location-card-london {
+  background-image: url("../assets/london.png");
+}
+
+.location-card-newyork {
+  background-image: url("../assets/newyork.png");
+}
+
+.location-card-washington {
+  background-image: url("../assets/washington.png");
 }
 
 /*# sourceMappingURL=style.css.map */
